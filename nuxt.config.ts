@@ -1,8 +1,6 @@
 export default {
-  // srcDir: "src/",
   buildDir: "dist",
   css: ["./assets/main.css", "@fortawesome/fontawesome-svg-core/styles.css"],
-  devtools: { enabled: true },
   app: {
     pageTransition: false,
     layoutTransition: false,
