@@ -11,8 +11,7 @@ export default defineEventHandler(async (event) => {
     )
     response.data.list[0].name = response.data.city?.name
     response.data.list[0].country =
-      response.data.city?.country || response.data.country
-    console.log(response.data)
+    response.data.city?.country || response.data.country
     return response.data
   } catch (err) {
     return {

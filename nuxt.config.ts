@@ -1,9 +1,8 @@
 export default {
-  srcDir: "src/",
-  buildDir: 'dist',
-  css: ["./src/assets/main.css", "@fortawesome/fontawesome-svg-core/styles.css"],
+  // srcDir: "src/",
+  buildDir: "dist",
+  css: ["./assets/main.css", "@fortawesome/fontawesome-svg-core/styles.css"],
   devtools: { enabled: true },
-  ssr: true,
   app: {
     pageTransition: false,
     layoutTransition: false,
@@ -22,8 +21,5 @@ export default {
     private: {
       API_KEY: process.env.API_KEY,
     },
-  },
-  nitro: {
-    rootDir: "server/",
   },
 }
