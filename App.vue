@@ -2,7 +2,6 @@
   <div :class="['app', themeClass]" class="h-[calc(100vh-80px)]">
     <VsHeader />
     <VsWeatherList />
-    <!-- <VsAutocompleteInput /> -->
   </div>
 </template>
 <script setup lang="ts">

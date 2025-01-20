@@ -101,7 +101,8 @@
         weatherData.value = JSON.parse(localStorage.getItem("weatherBlocks") ?? "[]")
       } else {
         const newWeatherData = await getUserLocation()
-        addBlock(takeWeatherData(newWeatherData))
+        const newWeatherBlock = await takeWeatherData(newWeatherData)
+        addBlock(newWeatherBlock)
       }
     } catch (err) {
       console.error(err)
