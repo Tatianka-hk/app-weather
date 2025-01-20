@@ -1,4 +1,4 @@
-export { default as VsHeader } from "./VsHeader.vue"
+export { default as VsHeader } from "./vs-header.vue"
 export { default as VsWeatherBlock } from "./vs-weather-block.vue"
 export { default as VsWeatherList } from "./vs-weather-list.vue"
 export { default as VsWeatherCard } from "./vs-weather-card.vue"

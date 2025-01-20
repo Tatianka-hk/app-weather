@@ -1,7 +1,7 @@
 <template>
   <div class="relative">
     <select
-      v-model="selectedLanguage"
+      v-model="locale"
       @change="changeLanguage"
       :class="['appearance-none border border-gray-300 !rounded-button px-3 py-1.5 pr-8 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-custom focus:border-custom', backgroundClass]"
     >
@@ -23,7 +23,6 @@
   import { ref, watch, computed } from "vue"
   import { useI18n } from "vue-i18n"
 
-  const selectedLanguage = ref("en")
   const { locale } = useI18n()
   const { isDay } = inject("theme")
   const backgroundClass = computed(() => {
@@ -34,6 +33,6 @@
   })
 
   function changeLanguage() {
-    locale.value = selectedLanguage.value
+    localStorage.setItem('lang', locale.value)
   }
 </script>

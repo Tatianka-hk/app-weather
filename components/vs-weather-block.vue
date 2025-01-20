@@ -10,10 +10,9 @@
     </button>
     <VsWeatherCard v-if="weather && !isWeeklyView" :weather="weather?.list?.[0]" />
     <VsWeatherWeek v-if="weather && isWeeklyView" :weather="weather" />
-    <!-- <VsLoader v-if="isPending" /> -->
     <button
       @click="removeBlock"
-      class="self-start bg-red-400 text-white rounded-md px-5 py-2 hover:bg-red-500 transition"
+      class="self-start bg-red-400 text-white rounded-md px-5 py-2 hover:bg-red-500 transition mt-1"
     >
       {{ $t('modals.remove') }}
     </button>

@@ -1,7 +1,6 @@
 <template>
   <div class="weather">
     <VsAutocompleteInput @selected="addBlock" />
-    <!-- {{ weatherData?.[0]?.list[0] }} -->
     <VsWeatherBlock
       v-for="(block, index) in weatherData"
       :weather="block"
@@ -17,7 +16,7 @@
   </div>
 </template>
 <script setup>
-  import { ref, onMounted, watch } from "vue"
+  import { ref, onMounted, watch, inject } from "vue"
   import { VsWeatherBlock } from "./"
   import { VsAutocompleteInput } from "../ui"
   import { VsConfirmationModal, VsLimitExceededModal } from "../models"
@@ -29,6 +28,7 @@
   const showModal = ref(false)
   const showLimitModal = ref(false)
   const blockToRemove = ref(-1)
+  const {setTheme} = inject('theme')
   watch(locale, (newValue, oldValue) => {
     if (newValue !== oldValue) {
       changedLanguage()
@@ -106,6 +106,10 @@
       }
     } catch (err) {
       console.error(err)
+    }finally{
+      console.log(localStorage.getItem('theme'))
+      if (localStorage.getItem('lang')) locale.value = localStorage.getItem('lang')
+      if (localStorage.getItem('theme')) setTheme((localStorage.getItem('theme')) === 'true')
     }
   })
 

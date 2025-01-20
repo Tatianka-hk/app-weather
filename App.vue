@@ -1,5 +1,5 @@
 <template>
-  <div :class="['app', themeClass]" class="h-[calc(100vh-80px)]">
+  <div :class="['app', themeClass]" class="min-h-[calc(100vh-80px)]">
     <VsHeader />
     <VsWeatherList />
   </div>
@@ -12,11 +12,19 @@
 
   const toggleTheme = () => {
     isDay.value = !isDay.value
+    localStorage.setItem('theme', isDay.value)
+    document.body.classList.toggle("light", isDay.value)
+  }
+
+  const setTheme = (theme)=>{
+    isDay.value = theme
+    localStorage.setItem('theme', isDay.value)
     document.body.classList.toggle("light", isDay.value)
   }
   provide("theme", {
     isDay,
     toggleTheme,
+    setTheme
   })
 
   const themeClass = computed(() => (isDay.value ? "light" : "dark"))

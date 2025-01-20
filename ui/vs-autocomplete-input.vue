@@ -1,5 +1,5 @@
 <template>
-  <div class="relative max-w-xl mx-auto mt-5 mb-2">
+  <div class="relative max-w-xl mx-auto mt-5 mb-5">
     <input
       type="text"
       v-model="query"
