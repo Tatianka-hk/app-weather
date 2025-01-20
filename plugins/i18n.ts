@@ -11,6 +11,7 @@ export default defineNuxtPlugin(({ vueApp }) => {
       en,
       ua,
     },
+    devtools: false,
   })
 
   vueApp.use(i18n)
