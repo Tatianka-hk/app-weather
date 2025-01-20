@@ -23,7 +23,9 @@ export default {
   },
   vite: {
     define: {
-      __VUE_PROD_DEVTOOLS__: false,
+      __VUE_PROD_DEVTOOLS__: 'false',
+      __VUE_I18N_FULL_INSTALL__: 'false',
+      __INTLIFY_PROD_DEVTOOLS__: 'false',
     },
-  }
+  },
 }
