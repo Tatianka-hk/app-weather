@@ -21,4 +21,9 @@ export default {
       API_KEY: process.env.API_KEY,
     },
   },
+  vite: {
+    define: {
+      __VUE_PROD_DEVTOOLS__: false,
+    },
+  }
 }

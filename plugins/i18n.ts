@@ -12,6 +12,7 @@ export default defineNuxtPlugin(({ vueApp }) => {
       ua,
     },
     devtools: false,
+    allowComposition: true,
   })
 
   vueApp.use(i18n)
