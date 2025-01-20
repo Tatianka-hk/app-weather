@@ -1,7 +1,7 @@
 export default {
   buildDir: "dist",
   css: ["./assets/main.css", "@fortawesome/fontawesome-svg-core/styles.css"],
-  devtools: process.env.NODE_ENV !== 'production',
+  devtools:false,
   app: {
     pageTransition: false,
     layoutTransition: false,
