@@ -1,5 +1,6 @@
 export default {
   srcDir: "src/",
+  buildDir: 'dist',
   css: ["./src/assets/main.css", "@fortawesome/fontawesome-svg-core/styles.css"],
   devtools: { enabled: true },
   ssr: true,
