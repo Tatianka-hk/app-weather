@@ -1,0 +1,61 @@
+{
+  "modals": {
+    "confirm": "Yes",
+    "cancel": "Cancel",
+    "limit-message": "You can only add up to 5 cities. Please remove a city to add another.",
+    "delete-message": "Are you sure you want to remove this block?",
+    "remove": "Remove"
+  },
+  "menu": {
+    "main": "Main",
+    "favorite": "Favorite"
+  },
+  "switch": {
+    "day": "Show day",
+    "days": "Show week",
+    "day_mode": "Day",
+    "night_mode": "Night"
+  },
+  "card": {
+    "title": "Weather in",
+    "weather": "Weather",
+    "temperature": "Temperature",
+    "humidity": "Humidity",
+    "wind": "Wind Speed",
+    "time": "Time",
+    "feels_like": "Feels like",
+    "recommendation": "Recommendation",
+    "celsius": "Celsius",
+    "fahrenheit": "Fahrenheit",
+    "unit": "Unit"
+  },
+  "autocomplete": "Enter city name",
+  "recommendation": {
+    "hot": {
+      "casual": "It's hot today, wear a t-shirt and shorts",
+      "sport": "Perfect for a workout, grab your sportswear",
+      "business": "It's hot today, wear a light suit"
+    },
+    "warm": {
+      "casual": "It's warm, wear a t-shirt and jeans",
+      "sport": "It's warm, grab your sports jacket",
+      "business": "A light suit is perfect for today"
+    },
+    "cool": {
+      "casual": "It's cool, grab a jacket",
+      "sport": "It's cool, grab your sports jacket",
+      "business": "It's cool, wear a coat"
+    },
+    "cold": {
+      "casual": "It's cold, wear a coat and scarf",
+      "sport": "It's cold, grab your sports jacket and hat",
+      "business": "It's cold, wear a coat and gloves"
+    }
+  },
+  "style": {
+    "style": "Clother style",
+    "casual": "Casual",
+    "sport": "Sport",
+    "business": "Business"
+  }
+}

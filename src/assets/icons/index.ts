@@ -1,0 +1,14 @@
+export { default as FavIcon } from "./FavIcon.vue"
+export { default as Logo } from "./IconLogo.vue"
+export { default as IconJacket } from "./IconJacket.vue"
+export { default as IconShirt } from "./IconShirt.vue"
+export { default as IconShorts } from "./IconShorts.vue"
+export { default as IconSportSuit } from "./IconSportSuit.vue"
+export { default as IconSuit } from "./IconSuit.vue"
+export { default as IconJeans } from "./IconJeans.vue"
+export { default as IconSportJacket } from "./IconSportJacket.vue"
+// export { default as IconScarf} from './IconScarf.vue'
+// export { default as IconGloves} from './IconGloves.vue'
+export { default as IconCoat } from "./IconCoat.vue"
+export { default as IconHat } from "./IconHat.vue"
+export { default as IconSweater } from "./IconSweater.vue"

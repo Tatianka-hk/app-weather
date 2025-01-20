@@ -1,28 +1,18 @@
 {
   "env": {
-      "node": true,
-      "es6": true
+    "node": true,
+    "es6": true
   },
   "extends": [
-      "eslint:recommended"
+    "eslint:recommended",
+    "plugin:vue/vue3-recommended"
   ],
-  "parserOptions": {
-      "ecmaVersion": 11
-  },
   "rules": {
-      "indent": [
-          "error",
-          4
-      ],
-      "linebreak-style": [
-          "error",
-          "unix"
-      ],
-      "no-console": [
-          "warn"
-      ],
-      "no-unused-vars":[
-          "warn"
-      ]
+    "indent": ["warn", 2],
+    "linebreak-style": ["error", "unix"],
+    "no-console": ["warn"],
+    "no-unused-vars": ["warn"],
+    "vue/no-parsing-error": ["warn"],
+    "no-undef":["warn"]
   }
 }
